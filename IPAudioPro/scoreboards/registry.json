@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-20.1",
+  "coordinate_space": "normalized_16_9",
+  "formats": {
+    "uefa": {"clock": [0.058,0.048,0.128,0.095], "extra": [0.035,0.095,0.090,0.135], "evidence": "receiver_fixture", "description": "UEFA bandeau bleu, variante observee sur CANAL"},
+    "eleven": {"clock": [0.085,0.073,0.152,0.124], "evidence": "receiver_fixture", "description": "Eleven Serie A, variante observee"},
+    "canal": {"clock": [0.047,0.110,0.096,0.155], "evidence": "receiver_fixture", "description": "CANAL, ancien bandeau observe"},
+    "arryadia": {"clock": [0.139,0.129,0.197,0.164], "extra": [0.139,0.163,0.174,0.189], "evidence": "receiver_fixture", "description": "Arryadia, bandeau violet et vert"},
+    "sky_epl": {"clock": [0.078,0.101,0.135,0.139], "evidence": "receiver_fixture", "description": "Sky Premier League, variante ecussons"},
+    "bein_epl": {"clock": [0.125,0.107,0.172,0.136], "evidence": "receiver_fixture", "description": "beIN Premier League, variante observee"}
+  },
+  "competitions": {
+    "premier_league": {"formats": ["sky_epl","bein_epl"], "coverage": "observed_variants"},
+    "champions_league": {"formats": ["uefa"], "coverage": "observed_variants"},
+    "serie_a": {"formats": ["eleven"], "coverage": "observed_variants"},
+    "la_liga": {"formats": [], "coverage": "fixture_needed"},
+    "ligue_1": {"formats": [], "coverage": "fixture_needed"},
+    "bundesliga": {"formats": [], "coverage": "fixture_needed"},
+    "english_cups": {"formats": [], "coverage": "fixture_needed"},
+    "spanish_cups": {"formats": [], "coverage": "fixture_needed"},
+    "italian_cups": {"formats": [], "coverage": "fixture_needed"},
+    "french_cups": {"formats": [], "coverage": "fixture_needed"},
+    "german_cups": {"formats": [], "coverage": "fixture_needed"}
+  }
+}
